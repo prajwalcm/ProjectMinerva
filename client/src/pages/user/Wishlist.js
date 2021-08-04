@@ -7,7 +7,7 @@ const History = () => (
             <div className="colmd-2">
                 <UserNav />
             </div>
-            <div className="col">user history page</div>
+            <div className="col">User Wishlist Page</div>
         </div>
     </div>
 );
