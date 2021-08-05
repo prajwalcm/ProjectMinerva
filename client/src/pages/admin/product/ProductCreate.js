@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import AdminNav from "../../../components/nav/AdminNav";
 import { toast } from "react-toastify";
 import { useSelector } from "react-redux";
@@ -6,19 +6,19 @@ import { createProduct } from "../../../functions/product";
 import ProductCreateForm from "../../../components/forms/ProductCreateForm";
 
 const initialState = {
-    title: "Macbook Pro",
-    description: "This is the best Apple product",
-    price: "45000",
+    title: "",
+    description: "",
+    price: "0",
     categories: [],
     category: "",
     subs: [],
     shipping: "Yes",
-    quantity: "50",
+    quantity: "0",
     images: [],
     colors: ["Black", "Brown", "Silver", "White", "Blue"],
-    brands: ["Apple", "Samsung", "Microsoft", "Lenovo", "ASUS"],
+    brands: ["Casio", "Ibanez", "Yamaha"],
     color: "White",
-    brand: "Apple",
+    brand: "Casio",
 };
 
 const ProductCreate = () => {
@@ -32,7 +32,7 @@ const ProductCreate = () => {
         createProduct(values, user.token)
             .then((res) => {
                 console.log(res);
-                window.alert(`"${res.data.title}" is created`);
+                toast.success(`"${res.data.title}" is created`);
                 window.location.reload();
             })
             .catch((err) => {

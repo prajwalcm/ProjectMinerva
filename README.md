@@ -1,27 +1,26 @@
-Description: The aim of project is to build an e-commerce platform for musical instruments.
+# Project Miverna
 
+## Group Members
+* Michael Manzon
+* Prajwal Chinchmalatpure
+* Nissar Ahmed Pinjari
 
-Goals:
-User authentication using username-password and social media login
-Navigation with search, filtering, and categorization
-Implement payment gateway with invoices for customer
-Product review system
+## Iteration 1
 
-Users:
+### Description
 
-Customers
+Our project is to build an e-commerce platform for musical instruments. 
 
-Filter, purchase, view purchase history, etc. 
-Make payments
-Browse items through search and categories 
-Rating items and vendors
-System to file complaints
+In iteration 1 we set up the front end and back end servers, implemented Firebase authentication, established protected routes based on user type, and began implementing different schemas and CRUD functionality. The home page is a placeholder, in the future it will display products users can view and add to cart. Logging in can be done through google or with email. If using email, a verificaiton email is sent, through which a user can set up a password. Users can go to their dashboards by howevering over their name once signed in and clicking on dashboard. Normal users will see pages for purchase history, changing password, and a wishlist. Admins will see links for their dashboard, create product, category, and subcategory forms, and change password form. Category and subcategories are displayed and can be edited/deleted, but products can only be created for now. Protected routes (like those in user dashboards), will redirect to the home page if the user is not logged in/is not an admin. 
 
-Vendors
-
-Upload product details (images, description, pricing, sales, etc.)
-Setup payment management system
-Invoice and transaction generation, management, and summarization
-System to manage complaints received
-
+### Responsibilities 
+* Prajwal
+* Michael
+    * set up backend express server and atlas mongodb database
+    * implemented firebase in the backend, and connected front and back ends to store information about users
+    * created user schema, enabled password resets, and protected routes based on user status
+        * users are redirected away from admin dashboard if their user type is not admin
+        * Only logged in users can see their history, password change, and wishlist pages
+    * deployed the client and server on Heroku, ensuring all database interactions and authentication still works at the deployed address
+* Nissar
 
