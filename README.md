@@ -1,4 +1,4 @@
-# Project Miverna
+# Project Minerva
 
 ## Link to project
 
@@ -11,11 +11,29 @@ https://project-minerva.herokuapp.com
 
 ## Iteration 1
 
+### Screenshots
+
+Home page: 
+
+![Ch13_Search](/readme_photos/home_page.png)
+
+Login page with email and google login:
+
+![Ch13_Search](/readme_photos/login.png)
+
+Admin view: create category form and navigation
+
+![Ch13_Search](/readme_photos/create_category.png)
+
+User view: reset password form with navigation 
+
+![Ch13_Search](/readme_photos/password.png)
+
 ### Description
 
 Our project is to build an e-commerce platform for musical instruments. 
 
-In iteration 1 we set up the front end and back end servers, implemented Firebase authentication, established protected routes based on user type, and began implementing different schemas and CRUD functionality. The home page is a placeholder, in the future it will display products users can view and add to cart. Logging in can be done through google or with email. If using email, a verificaiton email is sent, through which a user can set up a password. Users can go to their dashboards by howevering over their name once signed in and clicking on dashboard. Normal users will see pages for purchase history, changing password, and a wishlist. Admins will see links for their dashboard, create product, category, and subcategory forms, and change password form. Category and subcategories are displayed and can be edited/deleted, but products can only be created for now. Protected routes (like those in user dashboards), will redirect to the home page if the user is not logged in/is not an admin. 
+In iteration 1 we set up the front end and back end servers, implemented Firebase authentication, established protected routes based on user type, and began implementing different schemas and CRUD functionality. The home page is a placeholder, in the future it will display products users can view and add to cart. Logging in can be done through google or with email. If using email, a verificaiton email is sent, through which a user can set up a password. Users can go to their dashboards by hovering over their name once signed in and clicking on dashboard. Normal users will see pages for purchase history, changing password, and a wishlist. Admins will see links for their dashboard, create product, category, and subcategory forms, and change password form. Category and subcategories are displayed and can be edited/deleted, but products can only be created for now. Protected routes (like those in user dashboards), will redirect to the home page if the user is not logged in/is not an admin. 
 
 In order to use the admin functionality, you can use the following test credentials:
 
