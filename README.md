@@ -57,4 +57,10 @@ password: 123456
         * Only logged in users can see their history, password change, and wishlist pages
     * deployed the client and server on Heroku, ensuring all database interactions and authentication still works at the deployed address
 * Nissar
+  * Implemented Product Category Schema and Routes in the backend and instantiated CRUD request operations for products.
+  * Created and linked Dynamic Dashboard Link with admin sidebar Navigation.
+  * Implemented search filter categories of the product and executed code refactoring techniques
+  * Created product subcategories section by implementing CRUD requests and its associated functionalities.
+  * Initialized model section of products in backend by creating form and page with alert and reload functionalities after product gets created.
+  * Made a feature which sends error message while creation of products in categories or sub-categories and implemented code refactoring techniques.
 
