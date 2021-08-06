@@ -43,6 +43,12 @@ password: 123456
 
 ### Responsibilities 
 * Prajwal
+   * Initilized React application and basic routes
+   * Implemented navigation bar using Ant Design
+   * Implemented router links; set up firebase
+   * Created registration page; email verification for registration
+   * Implemented login page; Google login and forgot password
+   
 * Michael
     * set up backend express server and atlas mongodb database
     * implemented firebase in the backend, and connected front and back ends to store information about users
