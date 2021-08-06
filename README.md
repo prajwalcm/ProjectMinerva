@@ -1,5 +1,9 @@
 # Project Miverna
 
+## Link to project
+
+https://project-minerva.herokuapp.com
+
 ## Group Members
 * Michael Manzon
 * Prajwal Chinchmalatpure
@@ -12,6 +16,12 @@
 Our project is to build an e-commerce platform for musical instruments. 
 
 In iteration 1 we set up the front end and back end servers, implemented Firebase authentication, established protected routes based on user type, and began implementing different schemas and CRUD functionality. The home page is a placeholder, in the future it will display products users can view and add to cart. Logging in can be done through google or with email. If using email, a verificaiton email is sent, through which a user can set up a password. Users can go to their dashboards by howevering over their name once signed in and clicking on dashboard. Normal users will see pages for purchase history, changing password, and a wishlist. Admins will see links for their dashboard, create product, category, and subcategory forms, and change password form. Category and subcategories are displayed and can be edited/deleted, but products can only be created for now. Protected routes (like those in user dashboards), will redirect to the home page if the user is not logged in/is not an admin. 
+
+In order to use the admin functionality, you can use the following test credentials:
+
+email: projectminervatest@gmail.com
+
+password: 123456
 
 ### Responsibilities 
 * Prajwal
