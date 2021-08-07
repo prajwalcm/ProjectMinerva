@@ -1,6 +1,6 @@
 # Project Minerva
 
-## Link to project
+## Link to deployed project
 
 https://project-minerva.herokuapp.com
 
@@ -8,6 +8,23 @@ https://project-minerva.herokuapp.com
 * Michael Manzon
 * Prajwal Chinchmalatpure
 * Nissar Ahmed Pinjari
+
+Project initialized with create-react-app: https://github.com/facebook/create-react-app
+
+No starter project used.
+
+## Iteration 2
+
+### Screenshots
+
+### Description
+
+### Responsibilities
+* Prajwal
+
+* Michael 
+
+* Nissar
 
 ## Iteration 1
 
