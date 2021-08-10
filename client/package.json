@@ -8,16 +8,19 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.5.4",
-    "axios": "^0.21.1",
-    "firebase": "^7.24.0",
+    "axios": "^0.20.0",
+    "firebase": "^7.19.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-image-file-resizer": "^0.3.7",
     "react-redux": "^7.2.1",
+    "react-responsive-carousel": "^3.2.9",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-toastify": "^6.0.8",
     "redux": "^4.0.5",
-    "redux-devtools-extension": "^2.13.8"
+    "redux-devtools-extension": "^2.13.8",
+    "typewriter-effect": "^2.13.1"
   },
   "scripts": {
     "start": "HOST=localhost react-scripts start",
