@@ -9,14 +9,13 @@ const RegisterComplete = ({ history }) => {
   const [password, setPassword] = useState("");
 
   // const { user } = useSelector((state) => ({ ...state }));
-
   let dispatch = useDispatch();
 
   useEffect(() => {
     setEmail(window.localStorage.getItem("emailForRegistration"));
     // console.log(window.location.href);
     // console.log(window.localStorage.getItem("emailForRegistration"));
-  }, []);
+  }, [history]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -48,19 +47,20 @@ const RegisterComplete = ({ history }) => {
         console.log("user", user, "idTokenResult", idTokenResult);
 
         createOrUpdateUser(idTokenResult.token)
-        .then((res) => {
-          dispatch({
-            type: "LOGGED_IN_USER",
-            payload: {
-              name: res.data.name,
-              email: res.data.email,
-              token: idTokenResult.token,
-              role: res.data.role,
-              _id: res.data._id,
-            }
-          });
-        })
-        .catch((err) => console.log(err));
+          .then((res) => {
+            dispatch({
+              type: "LOGGED_IN_USER",
+              payload: {
+                name: res.data.name,
+                email: res.data.email,
+                token: idTokenResult.token,
+                role: res.data.role,
+                _id: res.data._id,
+              },
+            });
+          })
+          .catch((err) => console.log(err));
+
         // redirect
         history.push("/");
       }
