@@ -9,9 +9,11 @@ const LoadingToRedirect = () => {
     const interval = setInterval(() => {
       setCount((currentCount) => --currentCount);
     }, 1000);
-      count === 0 && history.push('/');
-      return () => clearInterval(interval);
-  }, [count, history])
+    // redirect once count is equal to 0
+    count === 0 && history.push("/");
+    // cleanup
+    return () => clearInterval(interval);
+  }, [count, history]);
 
   return (
     <div className="container p-5 text-center">
