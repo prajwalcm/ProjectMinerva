@@ -1,19 +1,17 @@
 import * as firebase from "firebase";
 
 // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyDey5tOsCk278MRwd4Qxk4aljBdzjFmigA",
-    authDomain: "projectminerva-63e42.firebaseapp.com",
-    projectId: "projectminerva-63e42",
-    storageBucket: "projectminerva-63e42.appspot.com",
-    messagingSenderId: "460830435019",
-    appId: "1:460830435019:web:2b5305e34d1787c2469d4e",
-    measurementId: "G-GE4RT6K7F6"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+const firebaseConfig = {
+  apiKey: "AIzaSyDniyhK46KyCVzN4PkypDIKjMEZLfTUx64",
+  authDomain: "ecommerce-225c8.firebaseapp.com",
+  databaseURL: "https://ecommerce-225c8.firebaseio.com",
+  projectId: "ecommerce-225c8",
+  storageBucket: "ecommerce-225c8.appspot.com",
+  messagingSenderId: "593746841585",
+  appId: "1:593746841585:web:f0090fc9296a27f7c67e50",
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
 // export
 export const auth = firebase.auth();
