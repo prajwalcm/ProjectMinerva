@@ -10,6 +10,7 @@
     "antd": "^4.5.4",
     "axios": "^0.20.0",
     "firebase": "^7.19.0",
+    "lodash": "^4.17.21",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-image-file-resizer": "^0.3.7",
