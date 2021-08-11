@@ -19,9 +19,9 @@ const initialState = {
   quantity: "50",
   images: [],
   colors: ["Black", "Brown", "Silver", "White", "Blue"],
-  brands: ["Apple", "Samsung", "Microsoft", "Lenovo", "ASUS"],
-  color: "White",
-  brand: "Apple",
+  brands: ["Casio", "Fender", "Gibson", "Ibanez", "Yamaha"],
+  color: "",
+  brand: "",
 };
 
 const ProductCreate = () => {

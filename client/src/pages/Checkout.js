@@ -25,7 +25,7 @@ const Checkout = ({ history }) => {
 
   useEffect(() => {
     getUserCart(user.token).then((res) => {
-      console.log("user cart res", JSON.stringify(res.data, null, 4));
+      // console.log("user cart res", JSON.stringify(res.data, null, 4));
       setProducts(res.data.products);
       setTotal(res.data.cartTotal);
     });
