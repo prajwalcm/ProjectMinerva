@@ -21,6 +21,11 @@ No starter project used.
 
 ### Responsibilities
 * Prajwal
+  * Implemented Star Rating System Backend
+  * Star Rating System: Front End
+  * Implemented Product Categories and Sub categories
+  * Advanced Searching and Filtering by: Price, Categories, Star Rating
+  * Advanced Searching and Filtering by: Brand, Color, SubCategory, Shipping
 
 * Michael 
 
