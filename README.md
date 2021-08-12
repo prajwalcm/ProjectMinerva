@@ -72,7 +72,8 @@ In iteration 2 we rounded out most functionality of the website. Admin can now v
   * implemented coupons
     * admin can create/edit/delete coupon codes
     * user can apply coupon code in checkout
-
+  * deployed iteration 2 client and server to heroku
+  
 * Nissar
 
 ## Iteration 1
