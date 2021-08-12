@@ -75,6 +75,12 @@ In iteration 2 we rounded out most functionality of the website. Admin can now v
   * deployed iteration 2 client and server to heroku
   
 * Nissar
+  * Set up image upload and storage for products using Cloudacity
+    * resizes images for display and storage
+  * Enabled product update and delete in the admin dashboard
+  * designed home page
+    * paginated display of new products, best sellers, etc.
+    * cool typewriter display at top of page
 
 ## Iteration 1
 
