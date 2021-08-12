@@ -35,6 +35,10 @@ Individual Product Page:
 
 ![Iteration-2](/readme_photos/product.png)
 
+Admin Coupon Page: 
+
+![Iteration-2](/readme_photos/coupon.png)
+
 Cart page:
 
 ![Iteration-2](/readme_photos/cart.png)
@@ -42,6 +46,10 @@ Cart page:
 Checkout with coupon applied:
 
 ![Iteration-2](/readme_photos/checkout.png)
+
+### Description
+
+In iteration 2 we rounded out most functionality of the website. Admin can now view, edit, and delete products on the site. The home page now displays highlighted items, and provides links to view products by category. The shop page displays all items, and enables filtering by many attributes. The search bar at the top allows users to search for items. Additionally, products can now be rated as well as added to the cart. The cart page has been implemented, and the cart is now part of the redux state. Users can go to the checkout page if they are logged in, and on that page they can enter coupon codes created by an admin. Admins can create, edit, and delete coupon codes from the coupon section of their admin dashboard. Next week we will implement payment/order processing with Stripe, and then complete the user and admin dashboards to include order history, invoices, etc.
 
 ### Responsibilities
 * Prajwal
