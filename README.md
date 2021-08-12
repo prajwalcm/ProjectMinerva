@@ -31,6 +31,10 @@ Shop with filters:
 
 ![Iteration-2](/readme_photos/shop.png)
 
+Individual Product Page: 
+
+![Iteration-2](/readme_photos/product.png)
+
 Cart page:
 
 ![Iteration-2](/readme_photos/cart.png)
