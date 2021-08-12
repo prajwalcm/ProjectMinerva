@@ -37,7 +37,7 @@ Cart page:
 
 Checkout with coupon applied:
 
-![Iteration-2](/readme_photos/cart.png)
+![Iteration-2](/readme_photos/checkout.png)
 
 ### Responsibilities
 * Prajwal
