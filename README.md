@@ -27,6 +27,14 @@ password: 123456
 
 ### Responsibilities
 * Prajwal
+  * Set up backend for Stripe Payment
+  * Set up front end for Stripe Payment
+  * Implement Stripe Checkout Component
+  * Charging Actual Cart Total
+  * Show Discount and Coupon Applied in Frontend
+  * Order Schema set up
+
+
 * Michael 
 * Nissar
 
