@@ -37,6 +37,11 @@ password: 123456
 
 * Michael 
 * Nissar
+  * Created Order feature in the Backend and added Empty Cart at frontend.
+  * Implemented Decrement Quantity Increment sold feature and showing out of stock feature.
+  * Impemented User orders in purchase history page and showing each Order's Products in table.
+  * Added a feature of showing payment info with PDF view and download link.
+  * Created Invoice component and downloading feature of invoice as PDF.
 
 ## Iteration 2
 
