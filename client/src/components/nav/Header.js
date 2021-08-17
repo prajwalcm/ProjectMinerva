@@ -87,6 +87,13 @@ const Header = () => {
             </Item>
           )}
 
+          {user && (
+            <Item>
+              <Link to="/user/wishlist">Wishlist</Link>
+            </Item>
+          )}
+
+
           <Item icon={<LogoutOutlined />} onClick={logout}>
             Logout
           </Item>
