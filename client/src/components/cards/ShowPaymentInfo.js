@@ -7,7 +7,7 @@ const ShowPaymentInfo = ({ order }) => (
       {" / "}
       <span>
         Amount:{" / "}
-        {(order.paymentIntent.amount /= 100).toLocaleString("en-US", {
+        {(order.paymentIntent.amount / 100).toLocaleString("en-US", {
           style: "currency",
           currency: "USD",
         })}
@@ -20,7 +20,7 @@ const ShowPaymentInfo = ({ order }) => (
       <span>Payment: {order.paymentIntent.status.toUpperCase()}</span>
       {" / "}
       <span>
-        Orderd on:{" / "}
+        Ordered on:{" / "}
         {new Date(order.paymentIntent.created * 1000).toLocaleString()}
       </span>
       {" / "}
