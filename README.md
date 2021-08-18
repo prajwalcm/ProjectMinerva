@@ -19,11 +19,36 @@ email: projectminervatest@gmail.com
 
 password: 123456
 
+In order to test stripe functionality you can use this test card:
+
+Number: 4242 4242 4242 4242
+Expiration: Any future date
+CVC: any 3 digit number
+zip code: any 5 digit number
+
 ## Iteration 3
 
 ### Screenshots
 
+Stripe payment page:
+
+![Iteration-3](/readme_photos/payment.png)
+
+User Purchase History with invoice downloads:
+
+![Iteration-3](/readme_photos/user_history.png)
+
+Admin Order Dashboard with status change:
+
+![Iteration-3](/readme_photos/admin_dashboard.png)
+
+User Wishlist:
+
+![Iteration-3](/readme_photos/wishlist.png)
+
 ### Total Progress
+
+Iteration 3 is complete! We have rounded out all of our main functionality. After integrating Stripe into our app, we can process credit card payments. Right now Stripe is only in test mode, because we don't want anyone accidentally spending real money. A test card's details are provided above the iteration 3 update. Order details are also stored in our database, so we can display each user's order history as well as all orders together in the admin dashboard. Users can download pdf invoices for each of their orders from their history page, and admins can update the status of any order. Finally, products can be added to users' wishlists, which are stored in the database. Users can delete products from their wishlists, as well as navigate to any product it contains. Logged in users can get to their wishlist from the dropdown menu where they can also get to their dashboard/history and logout.
 
 ### Responsibilities
 * Prajwal
@@ -33,9 +58,13 @@ password: 123456
   * Charging Actual Cart Total
   * Show Discount and Coupon Applied in Frontend
   * Order Schema set up
-
-
 * Michael 
+  * implement order status update functionality for admin
+  * display all orders with details in tables and changable order status in the admin dashboard
+  * set up backend for wishlist
+  * setup wishlist page and operations, added link to wishlist from logged in dropdown menu
+  * stamped out bug where reloading order history and admin dashboard would adjust the displayed total cost of orders
+  * Deployed app on heroku
 * Nissar
   * Created Order feature in the Backend and added Empty Cart at frontend.
   * Implemented Decrement Quantity Increment sold feature and showing out of stock feature.
