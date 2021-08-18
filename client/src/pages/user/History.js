@@ -39,14 +39,14 @@ const History = () => {
         {order.products.map((p, i) => (
           <tr key={i}>
             <td>
-              <b>{p.product.title}</b>
+              <b>{p.product ? p.product.title : 'Deleted'}</b>
             </td>
-            <td>{p.product.price}</td>
-            <td>{p.product.brand}</td>
+            <td>{p.product ? p.product.price : 'Deleted'}</td>
+            <td>{p.product ? p.product.brand : 'Deleted'}</td>
             <td>{p.color}</td>
             <td>{p.count}</td>
             <td>
-              {p.product.shipping === "Yes" ? (
+              {p.product && p.product.shipping === "Yes" ? (
                 <CheckCircleOutlined style={{ color: "green" }} />
               ) : (
                 <CloseCircleOutlined style={{ color: "red" }} />

@@ -18,6 +18,7 @@ const ProductCard = ({ product }) => {
 
   const handleAddToCart = () => {
     // create cart array
+    if (product.quantity > 0) {
     let cart = [];
     if (typeof window !== "undefined") {
       // if cart is in local storage GET it
@@ -48,6 +49,7 @@ const ProductCard = ({ product }) => {
         payload: true,
       });
     }
+  }
   };
 
   // destructure

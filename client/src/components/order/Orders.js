@@ -20,14 +20,14 @@ const Orders = ({ orders, handleStatusChange }) => {
         {order.products.map((p, i) => (
           <tr key={i}>
             <td>
-              <b>{p.product.title}</b>
+              <b>{p.product ? p.product.title : 'Deleted'}</b>
             </td>
-            <td>{p.product.price}</td>
-            <td>{p.product.brand}</td>
+            <td>{p.product ? p.product.price : 'Deleted'}</td>
+            <td>{p.product ? p.product.brand : 'Deleted'}</td>
             <td>{p.color}</td>
             <td>{p.count}</td>
             <td>
-              {p.product.shipping === "Yes" ? (
+              {p.product && p.product.shipping === "Yes" ? (
                 <CheckCircleOutlined style={{ color: "green" }} />
               ) : (
                 <CloseCircleOutlined style={{ color: "red" }} />
@@ -42,9 +42,9 @@ const Orders = ({ orders, handleStatusChange }) => {
   return (
     <>
       {orders.map((order) => (
-        <div key={order._id} className="row pb-5">
+        <div key={order._id} className="m-5 p-3 card">
+          <ShowPaymentInfo order={order} showStatus={false} />
           <div className="btn btn-block bg-light">
-            <ShowPaymentInfo order={order} showStatus={false} />
 
             <div className="row">
               <div className="col-md-4">Delivery Status</div>

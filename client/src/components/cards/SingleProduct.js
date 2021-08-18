@@ -30,6 +30,7 @@ const SingleProduct = ({ product, onStarClick, star }) => {
   const { title, images, description, _id } = product;
 
   const handleAddToCart = () => {
+    if (product.quantity > 0) {
     // create cart array
     let cart = [];
     if (typeof window !== "undefined") {
@@ -61,6 +62,7 @@ const SingleProduct = ({ product, onStarClick, star }) => {
         payload: true,
       });
     }
+  }
   };
 
   const handleAddToWishlist = (e) => {
