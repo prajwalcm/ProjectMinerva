@@ -48,7 +48,7 @@ User Wishlist:
 
 ### Total Progress
 
-Iteration 3 is complete! We have rounded out all of our main functionality. After integrating Stripe into our app, we can process credit card payments. Right now Stripe is only in test mode, because we don't want anyone accidentally spending real money. A test card's details are provided above the iteration 3 update. Order details are also stored in our database, so we can display each user's order history as well as all orders together in the admin dashboard. Users can download pdf invoices for each of their orders from their history page, and admins can update the status of any order. Finally, products can be added to users' wishlists, which are stored in the database. Users can delete products from their wishlists, as well as navigate to any product it contains. Logged in users can get to their wishlist from the dropdown menu where they can also get to their dashboard/history and logout.
+Iteration 3 is complete! We have rounded out all of our main functionality. After integrating Stripe into our app, we can process credit card payments. Right now Stripe is only in test mode, because we don't want anyone accidentally spending real money. A test card's details are provided above the iteration 3 update. Order details are also stored in our database, so we can display each user's order history as well as all orders together in the admin dashboard. Users can download pdf invoices for each of their orders from their history page, and admins can update the status of any order. Finally, products can be added to logged-in users' wishlists by clicking the "add to wishlist" button on a product's page. The wishlists for each user are stored in the database. Logged in users can delete products from their wishlists, as well as navigate to any product it contains. Logged in users can get to their wishlist from the dropdown menu where they can also get to their dashboard/history and logout.
 
 ### Responsibilities
 * Prajwal
@@ -64,6 +64,7 @@ Iteration 3 is complete! We have rounded out all of our main functionality. Afte
   * set up backend for wishlist
   * setup wishlist page and operations, added link to wishlist from logged in dropdown menu
   * stamped out bug where reloading order history and admin dashboard would adjust the displayed total cost of orders
+  * fixed bug where deleted products caused errors when viewing orders that contained them
   * Deployed app on heroku
 * Nissar
   * Created Order feature in the Backend and added Empty Cart at frontend.
